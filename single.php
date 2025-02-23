@@ -12,7 +12,34 @@
         echo '<p>No content found.</p>';
     endif;
     ?>
+    <h3>Share this post:</h3>
+<a href="https://www.facebook.com/sharer.php?u=<?php the_permalink(); ?>" target="_blank">Facebook</a> |
+<a href="https://twitter.com/share?url=<?php the_permalink(); ?>" target="_blank">Twitter</a> |
+<a href="https://api.whatsapp.com/send?text=<?php the_permalink(); ?>" target="_blank">WhatsApp</a>
+
 </div>
 
 <?php get_sidebar(); ?>
+<h3>Related Posts</h3>
+<div class="article-grid">
+    <?php
+    $related = new WP_Query(array(
+        'category__in' => wp_get_post_categories(get_the_ID()),
+        'posts_per_page' => 3,
+        'post__not_in' => array(get_the_ID())
+    ));
+    while ($related->have_posts()) : $related->the_post(); ?>
+        <div class="article">
+            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+        </div>
+    <?php endwhile; wp_reset_postdata(); ?>
+</div>
+
+<div class="author-box">
+    <h3>About the Author</h3>
+    <p><strong><?php the_author(); ?></strong></p>
+    <p><?php the_author_meta('description'); ?></p>
+</div>
+
+
 <?php get_footer(); ?>

@@ -54,3 +54,21 @@ body {
     text-align: center;
     padding: 20px;
 }
+.author-box {
+    background: #f9f9f9;
+    padding: 15px;
+    border-left: 4px solid #333;
+    margin-top: 20px;
+}
+.pagination {
+    text-align: center;
+    margin: 20px 0;
+}
+.pagination a {
+    padding: 10px;
+    background: #333;
+    color: white;
+    margin: 5px;
+    text-decoration: none;
+}
+

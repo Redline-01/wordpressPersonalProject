@@ -15,6 +15,16 @@
             echo '<p>No articles found.</p>';
         endif;
         ?>
+        <div class="pagination">
+    <?php
+    echo paginate_links(array(
+        'mid_size' => 2,
+        'prev_text' => __('« Prev', 'newspress'),
+        'next_text' => __('Next »', 'newspress'),
+    ));
+    ?>
+</div>
+
     </div>
 </div>
 
