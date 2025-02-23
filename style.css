@@ -1,49 +1,56 @@
 /*
 Theme Name: NewsPress
-Theme URI: https://example.com/newspress
+Theme URI: https://yourwebsite.com
 Author: Your Name
-Author URI: https://example.com
-Description: A simple WordPress theme for news websites.
+Author URI: https://yourwebsite.com
+Description: A simple news theme for WordPress.
 Version: 1.0
 License: GNU General Public License v2 or later
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: newspress
 */
 
 body {
     font-family: Arial, sans-serif;
+    background: #f4f4f4;
     margin: 0;
     padding: 0;
 }
 
 .container {
     width: 80%;
-    margin: 0 auto;
+    margin: auto;
 }
 
-header {
+.header {
     background: #333;
     color: #fff;
-    padding: 15px 0;
+    padding: 20px;
     text-align: center;
 }
 
-nav {
+.nav-menu {
+    display: flex;
+    justify-content: center;
     background: #444;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px;
 }
 
-nav a {
+.nav-menu a {
     color: #fff;
-    margin: 0 15px;
+    padding: 10px 15px;
     text-decoration: none;
 }
 
-footer {
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.footer {
     background: #222;
-    color: #fff;
+    color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 20px;
 }
