@@ -9,32 +9,7 @@
         font-weight: bold;
     }
 </style>
-<style>
-    body.dark-mode {
-        background: #222;
-        color: white;
-    }
-    .dark-mode-toggle {
-        cursor: pointer;
-        padding: 10px;
-        background: black;
-        color: white;
-        text-align: center;
-        width: 100px;
-        margin: 10px auto;
-    }
-</style>
-<script>
-    function toggleDarkMode() {
-        document.body.classList.toggle('dark-mode');
-        localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-    }
-    document.addEventListener("DOMContentLoaded", function() {
-        if (localStorage.getItem('darkMode') === "true") {
-            document.body.classList.add('dark-mode');
-        }
-    });
-</script>
+
 
 
 <head>
@@ -44,7 +19,6 @@
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
 </head>
 <body>
-<div class="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</div>
 
     <div class="header">
         <h1><?php bloginfo('name'); ?></h1>
