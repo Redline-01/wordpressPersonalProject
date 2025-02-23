@@ -24,5 +24,5 @@ function newspress_widgets() {
         'after_title' => '</h3>',
     ));
 }
-add_action('widgets_init', 'newspress_widgets');
+
 ?>

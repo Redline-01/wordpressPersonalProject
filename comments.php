@@ -9,27 +9,11 @@ if (post_password_required()) {
 
     <?php if (have_comments()) : ?>
         <ul class="comment-list">
-            <?php
-            wp_list_comments(array(
-                'style' => 'ul',
-                'short_ping' => true,
-                'avatar_size' => 50,
-                'reply_text' => 'Reply',
-                'callback' => 'newspress_custom_comments'
-            ));
-            ?>
+            <?php wp_list_comments(array('style' => 'ul', 'short_ping' => true)); ?>
         </ul>
-
-        <div class="comment-pagination">
-            <?php paginate_comments_links(); ?>
-        </div>
     <?php endif; ?>
 
     <div class="comment-form">
         <?php comment_form(); ?>
     </div>
-    
-
-
 </div>
-
