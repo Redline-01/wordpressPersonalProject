@@ -25,4 +25,5 @@ function newspress_widgets() {
     ));
 }
 
+
 ?>
