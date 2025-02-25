@@ -35,6 +35,7 @@ body {
     display: flex;
     gap: 15px;
     background: #333;
+    justify-content: center;
 
 }
 .nav-menu li {
@@ -45,7 +46,6 @@ body {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    margin-left: 10px;
     height: 20px;
     padding: 10px;
     transition: ease-in-out 0.5s;
