@@ -26,5 +26,7 @@ else :
 endif;
 
 wp_reset_postdata();
+?>
+<?php
 get_footer();
 ?>
