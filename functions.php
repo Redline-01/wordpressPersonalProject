@@ -25,5 +25,7 @@ function newspress_widgets() {
     ));
 }
 
+add_theme_support('post-thumbnails');
+
 
 ?>
