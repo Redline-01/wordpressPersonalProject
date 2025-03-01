@@ -28,7 +28,7 @@
 			</button>
 
 			<div id="navigation" class="collapse navbar-collapse flex-column" >
-				<img class="mb-3 mx-auto logo" src="images/logo.png" alt="logo" >			
+				<img class="mb-3 mx-auto logo" src="assets/images/logo.png" alt="logo" >			
 				
 				<ul class="navbar-nav flex-column text-sm-center text-md-left">
 					<li class="nav-item active">
