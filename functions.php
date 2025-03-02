@@ -3,10 +3,12 @@
 function blogsite_theme_support() {
 
     add_theme_support('title-tag');
+    add_theme_support('custom-logo');
 
 }
 
 add_action('after_setup_theme', 'blogsite_theme_support');
+
 
 function blogsite_menus() {
 
@@ -21,6 +23,7 @@ function blogsite_menus() {
 
 add_action('init', 'blogsite_menus');
 
+
 function blogsite_styles() {
 
     $version = wp_get_theme()->get('Version');
@@ -32,6 +35,7 @@ function blogsite_styles() {
 }
 
 add_action('wp_enqueue_scripts', 'blogsite_styles');
+
 
 function blogsite_scripts() {
 
