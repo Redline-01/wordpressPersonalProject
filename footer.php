@@ -3,7 +3,7 @@
            <p class="copyright"><a href="#">Redon Bytyqi 2025</a></p>
            <?php
 
-			dynamic_sidebar('sidebar-1');
+			dynamic_sidebar('footer-1');
 
 			
 			?>
